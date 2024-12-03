@@ -1,79 +1,107 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Personal Portfolio of a Computer Science and Design Student">
-    <title>Your Name - Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <!-- Header Section with Image and Introduction -->
-    <header class="header">
-        <img src="c:\Users\comp\Downloads\kusum.jpg" alt="Your Image" class="profile-image">
-        <h1>KUSUM.A</h1>
-        <p> BE Student in Computer Science and Design | 5th Sem, BGSCET, Bangalore</p>
-    </header>
-    <link rel="stylesheet" href="styl.css">
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
 
-    <!-- About Me Section -->
-    <section class="about-me">
-        <h2>About Me</h2>
-        <p>Hello! I am a passionate computer science and design student currently in my 5th semester at BGSCET, Bangalore. I have a keen interest in web development, UI/UX design, and exploring the intersection of technology and creativity. Through my studies and personal projects, I strive to build useful and engaging digital experiences.</p>
-    </section>
+/* Header Section */
+.header {
+    background-color: #032338;
+    color: #fff;
+    text-align: center;
+    padding: 2rem 1rem;
+}
 
-    <!-- Contact Information Section -->
-    <section class="contact">
-        <h2>Contact Information</h2>
-        <p>Email: <a href="a.kusum@gmail.com">a.kusum0311@gmail.com</a></p>
-        <p>Phone: 7022878070</p>
-        <p>Location: Bangalore, India</p>
-    </section>
+.header .profile-image {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
 
-    <!-- Resume Section -->
-    <section class="resume">
-        <h2>Resume</h2>
-        <ul>
-            <li><strong>Education</strong>
-                <ul>
-                    <li>BE in Computer Science and Design, BGSCET, Bangalore(Expected Graduation-2026) </li>
-                    <li>Relevant Courses: Web Development, Data Structures, Computer Graphics, Algorithms, Digital Systems</li>
-                </ul>
-            </li>
-            <li><strong>Experience</strong>
-                <ul>
-                    <li>Certified by NASA for participating in the hackathon on“Creating a Orrery website that displays near Earth objects”</li>
-                    <li>Worked on building responsive websites using HTML, CSS, and Java.</li>
-                    <li>Deep Dive into Python Libraries with Data Science Application Projects ”, certified by  GIGA SKILL.</li>
-                </ul>
-            </li>
-            <li><strong>Projects</strong>
-                <ul>
-                    <li>Portfolio Website- A personal portfolio website built using HTML, CSS, and basic JavaScript.</li>
-                    <li>Online app-created online app on Mass Merchant.</li>
-                    <li>website-Created website onCrop Disease Detection using Deep Learning.</li>
-                </ul>
-            </li>
-        </ul>
-    </section>
+.header h1 {
+    font-size: 2.5rem;
+    margin: 0.5rem 0;
+}
 
-    <!-- Skills Section -->
-    <section class="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li>HTML</li>
-            <li>CSS3 (Flexbox, Grid, Responsive Design)</li>
-            <li>Java </li>
-            <li>Graphics</li>
-            <li>Version Control (Git/GitHub)</li>
-            <li>Python (Basic)</li>
-            <li>CAED</li>
-        </ul>
-    </section>
+.header p {
+    font-size: 1.2rem;
+    margin: 0;
+}
 
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2024 Kusum A. All Rights Reserved.</p>
-    </footer>
-</body>
-</html>
+/* Section Styles */
+section {
+    background: #fff;
+    margin: 2rem auto;
+    padding: 2rem;
+    border-radius: 10px;
+    max-width: 800px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    font-size: 2rem;
+    border-bottom: 2px solid #02243b;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+    color: #022034;
+}
+
+section p, section ul {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+section ul {
+    list-style-type: square;
+    padding-left: 1.5rem;
+}
+
+section ul ul {
+    list-style-type: circle;
+    margin-top: 0.5rem;
+}
+
+/* Contact Section */
+.contact a {
+    color: #03273e;
+    text-decoration: none;
+}
+
+.contact a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background: #032a44;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header h1 {
+        font-size: 2rem;
+    }
+
+    section h2 {
+        font-size: 1.8rem;
+    }
+
+    section p, section ul {
+        font-size: 0.9rem;
+    }
+}
